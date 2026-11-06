@@ -1,0 +1,16 @@
+[project]
+name = "l1-mlx-chat"
+version = "0.1.0"
+description = "learning-unit/L1-30B-A5B 모델을 Mac에서 실행하는 Gradio 채팅 UI"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Elvin Jang", email = "68813862+fromimportas@users.noreply.github.com" }]
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.15.0",
+    "gradio>=6.31.0",
+    "mlx-lm>=0.32.2 ; platform_machine == 'arm64' and sys_platform == 'darwin'",
+    "torch>=2.15.0",
+    "transformers>=5.22.1",
+]
